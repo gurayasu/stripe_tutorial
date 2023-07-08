@@ -22,9 +22,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/libs/server.js",
-    "src/pages/api/checkout_api.js",
-    "src/pages/index.jsx"
+    "src/libs/server.ts",
+    "src/pages/api/checkout_api.ts",
+    "src/pages/index.tsx"
   ],
   "exclude": ["node_modules"]
 }

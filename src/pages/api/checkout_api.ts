@@ -1,6 +1,10 @@
+import { NextApiRequest, NextApiResponse } from "next";
 import { stripe } from "../../libs/server";
 
-export default async function handler(req, res) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const customer = await stripe.customers.retrieve(req.body.customer_id);
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
